@@ -1,0 +1,12 @@
+<h1>Result</h1>
+<div class="box_letters">
+  <% letters = params[:letters_choice].split(//) %>
+  <% letters.each do |letter| %>
+      <span class="letter"><%= letter %></span>
+  <% end %>
+</div>
+
+<p>My word is :  <%= params[:word] %></p>
+<%= @result %>
+
+<p><%= link_to "Enter new word", new_path %></p>
